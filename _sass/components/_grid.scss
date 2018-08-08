@@ -1,0 +1,8 @@
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 $gutter-horizontal;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}

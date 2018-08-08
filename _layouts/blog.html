@@ -1,0 +1,14 @@
+---
+layout: "wrapper"
+---
+<section class="row">
+  <h1>BLOG</h1>
+  <p>Under Construction</p>
+  <ul>
+    {% for post in site.posts  %}
+    <li>
+      <a href="{{post.url}}">{{ post.title }}</a>
+    </li>
+    {% endfor  %}
+  </ul>
+</section>

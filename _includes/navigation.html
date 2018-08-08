@@ -1,0 +1,25 @@
+<nav class="site-navigation">
+  <ul class="site-navigation__list">
+    {% if page.layout == "home" %}
+    <li class="site-navigation__list-item">
+      <a href="#projects" class="site-navigation__link">Projects</a>
+    </li>
+    <li class="site-navigation__list-item">
+      <a href="#work" class="site-navigation__link">Work</a>
+    </li>
+    <li class="site-navigation__list-item">
+      <a href="#contact" class="site-navigation__link">Contact</a>
+    </li>
+    {% else %}
+    <li class="site-navigation__list-item">
+      <a href="/" class="site-navigation__link">Home</a>
+    </li>
+    <li class="site-navigation__list-item">
+      <a href="/#contact" class="site-navigation__link">Contact</a>
+    </li>
+    {% endif %}
+    <li class="site-navigation__list-item">
+      <a href="/blog" class="site-navigation__link">Blog</a>
+    </li>
+  </ul>
+</nav>

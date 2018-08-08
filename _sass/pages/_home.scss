@@ -1,0 +1,41 @@
+.contact-me {
+  text-align: center;
+
+  &__links {
+    padding: 0;
+    list-style: none;
+    margin-top: 6rem;
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child)::after {
+        content: "|";
+        display: inline-block;
+        color: $color-blue;
+        margin: 0 3rem;
+      }
+    }
+
+    a {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        background-color: $color-blue;
+        height: 3px;
+        width: 0;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
