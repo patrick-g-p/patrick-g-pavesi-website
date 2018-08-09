@@ -17,10 +17,6 @@
     transform: translateY(-0.3rem);
   }
 
-  &:active {
-    transform: translateY(0);
-  }
-
   & > svg {
     margin-left: 0.5rem;
 
@@ -39,8 +35,7 @@
     color: $color-white;
   }
 
-  &--blue:hover,
-  &--blue:active {
+  &--blue:hover {
     background-color: $color-dark-blue;
     color: $color-off-white;
   }
