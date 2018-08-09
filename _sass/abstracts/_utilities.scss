@@ -1,6 +1,14 @@
-.u-bm-md {
-  margin-bottom: $cmp-md;
+.u-tm-md {
+  margin-top: $cmp-md !important;
 }
+.u-tm-sm {
+  margin-top: $cmp-sm !important;
+}
+
+.u-bm-md {
+  margin-bottom: $cmp-md !important;
+}
+
 .u-bm-sm {
-  margin-bottom: $cmp-sm;
+  margin-bottom: $cmp-sm !important;
 }

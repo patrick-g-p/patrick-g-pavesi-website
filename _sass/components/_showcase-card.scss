@@ -1,10 +1,20 @@
 .showcase-card {
   background-color: $color-white;
-  border-radius: 3px;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
-  margin: 3rem 0;
+  margin: 2rem auto;
   padding: $mp-lg;
   text-align: center;
+
+  &--list {
+    text-align: left;
+    padding: 0;
+  }
+
+  & + &,
+  & + &--list,
+  &--list + &--list {
+    margin-top: 6rem;
+  }
 
   @media screen and (max-width: 768px) {
     text-align: left;
@@ -17,10 +27,19 @@
     @media screen and (max-width: 768px) {
       margin-bottom: $mp-lg;
     }
+
+    &--padding {
+      padding: 2rem 4rem;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__image-container {
     height: 300px;
+    width: 100%;
     margin: 3rem auto;
     text-align: center;
 
@@ -39,7 +58,6 @@
     font-size: 1.8rem;
     max-width: 500px;
     text-align: left;
-    word-wrap: break-word;
   }
 
   &__tags {
@@ -96,5 +114,64 @@
         }
       }
     }
+  }
+
+  &__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      display: block;
+      padding: 2rem 4rem;
+      border-bottom: 1px solid #dadada;
+      background-image: linear-gradient($color-white, $color-white);
+      transform: translateY(0);
+      transition: all 0.3s ease;
+
+      a {
+        transition: color 0.3s ease;
+        color: $color-gray;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        transform: translateY(-0.3rem);
+        border-color: transparent;
+        box-shadow: 0 0.1rem 0.6rem rgba($color-black, 0.5);
+        background-image: linear-gradient($color-blue, $color-dark-blue);
+
+        .project-work-title,
+        a {
+          color: white;
+        }
+      }
+    }
+
+    &-link {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .project-work-title {
+    font-size: 1.8rem;
+    color: $color-blue;
+    transition: color 0.3s ease;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .project-work-tags {
+    flex-grow: 1;
   }
 }

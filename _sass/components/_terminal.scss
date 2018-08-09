@@ -1,6 +1,7 @@
 .skills-terminal {
   word-break: word;
   font-family: monospace;
+  margin-top: $mp-lg;
 
   &__container {
     border: 2px solid $color-gray;
@@ -45,11 +46,11 @@
   }
 
   &__caret {
-    border-left: 3px solid $color-white;
-    animation: blink-caret 0.8s step-end infinite;
+    border-left: 5px solid $color-white;
+    animation: blink-caret-terminal 0.8s step-end infinite;
   }
 
-  @keyframes blink-caret {
+  @keyframes blink-caret-terminal {
     from,
     to {
       border-color: transparent;

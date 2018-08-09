@@ -11,7 +11,7 @@
       }
     }
     h1 {
-      border-right: 1.5rem solid $color-blue;
+      border-right: 1.6rem solid $color-blue;
       color: $color-blue;
       display: inline-block;
       letter-spacing: 0.5rem;
@@ -72,6 +72,11 @@
   }
 }
 
+.projects-and-work {
+  background-color: $color-off-white;
+  padding: 2rem 0;
+}
+
 .contact-me {
   text-align: center;
 
@@ -79,7 +84,6 @@
     padding: 0;
     list-style: none;
     margin-top: 6rem;
-    text-align: center;
 
     li {
       display: inline-block;
