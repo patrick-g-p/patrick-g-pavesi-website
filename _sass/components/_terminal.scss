@@ -1,0 +1,61 @@
+.skills-terminal {
+  word-break: word;
+  font-family: monospace;
+
+  &__container {
+    border: 2px solid $color-gray;
+    border-radius: 3px;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+  }
+
+  &__header {
+    background-color: $color-gray;
+    height: 15px;
+  }
+
+  &__body {
+    background-color: black;
+    padding: 1rem 3rem;
+  }
+
+  &__info-group {
+    margin-top: $mp-md;
+    margin-bottom: $mp-md;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    color: $color-white;
+  }
+
+  &__output {
+    margin-top: 1rem;
+    color: $color-orange;
+  }
+
+  &__output-boolean {
+    color: #9b59b6;
+  }
+
+  &__caret {
+    border-left: 3px solid $color-white;
+    animation: blink-caret 0.8s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: $color-white;
+    }
+  }
+}

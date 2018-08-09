@@ -16,6 +16,16 @@
         color: $color-blue;
         margin: 0 3rem;
       }
+
+      @media screen and (max-width: 500px) {
+        display: block;
+
+        &:not(:last-child)::after {
+          content: "-";
+          display: block;
+          margin: 1.5rem 0;
+        }
+      }
     }
 
     a {
