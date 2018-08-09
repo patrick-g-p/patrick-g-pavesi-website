@@ -1,0 +1,46 @@
+.site-navigation {
+  padding: $gutter-vertical-sm 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+
+    @media screen and (max-width: 500px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      background-color: $color-blue;
+      height: 5px;
+      width: 0;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
