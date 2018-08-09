@@ -1,14 +1,73 @@
+--- 
+layout: "wrapper" 
 ---
-layout: "wrapper"
----
-<section class="row">
-  <h1>BLOG</h1>
-  <p>Under Construction</p>
-  <ul>
-    {% for post in site.posts  %}
-    <li>
-      <a href="{{post.url}}">{{ post.title }}</a>
-    </li>
-    {% endfor  %}
-  </ul>
+<section class="row row--blog blog-dashboard">
+  <h1 class="header header--default u-bm-sm">Blog Posts</h1>
+  <div class="blog-dashboard__posts">
+    {% if site.posts.size == 0 %}
+    <p class="blog-dashboard__no-posts">I haven&#39;t published anything yet. Come back soon!</p>
+    {% else %} {% for post in site.posts %}
+    <a class="blog-dashboard__post-link" href="{{post.url}}">
+      <div class="blog-dashboard__post">
+        <h2 class="blog-dashboard__post-title">{{ post.title }}</h2>
+        <p class="blog-dashboard__post-excerpt">
+          {{ post.excerpt | remove: '
+          <p>' | remove: '</p>' }}
+          <small class="blog-dashboard__post-date">{{post.date | date: "%b %d, %Y"}}</small>
+        </p>
+      </div>
+    </a>
+    {% endfor %} {% endif %}
+  </div>
 </section>
+<div class="external-articles">
+  <section class="row row--blog blog-dashboard">
+    <h2 class="header header--orange u-bm-sm">Articles I Like</h2>
+    <a class="blog-dashboard__post-link" href="https://medium.freecodecamp.org/how-to-escape-tutorial-purgatory-as-a-new-developer-or-at-any-time-in-your-career-e3a4b2384a40">
+      <div class="blog-dashboard__post">
+        <h2 class="blog-dashboard__post-title">How to escape tutorial purgatory as a new developer — or at any time in your career.</h2>
+        <p class="blog-dashboard__post-excerpt">
+          Written by Tony Mastrorio
+          <small class="blog-dashboard__post-date">Jun 1, 2018</small>
+        </p>
+      </div>
+    </a>
+    <a class="blog-dashboard__post-link" href="https://medium.com/launch-school/why-you-need-an-interview-script-b86e18d0200a">
+      <div class="blog-dashboard__post">
+        <h2 class="blog-dashboard__post-title">Why You Need an Interview Script</h2>
+        <p class="blog-dashboard__post-excerpt">
+          Written by Julius Zerwick
+          <small class="blog-dashboard__post-date">Mar 27, 2018</small>
+        </p>
+      </div>
+    </a>
+    <a class="blog-dashboard__post-link" href="https://medium.freecodecamp.org/learning-to-code-when-it-gets-dark-e485edfb58fd">
+      <div class="blog-dashboard__post">
+        <h2 class="blog-dashboard__post-title">Learning to Code: When It Gets Dark</h2>
+        <p class="blog-dashboard__post-excerpt">
+          Written by Alexander Kallaway
+          <small class="blog-dashboard__post-date">Mar 27, 2016</small>
+        </p>
+      </div>
+    </a>
+    <a class="blog-dashboard__post-link" href="https://www.sageadvice.eu/2015/12/28/is-chris-perkins-the-dungeon-master-experience-archive-gone/">
+      <div class="blog-dashboard__post">
+        <h2 class="blog-dashboard__post-title">Chris Perkins &#34;The Dungeon Master Experience&#34;</h2>
+        <p class="blog-dashboard__post-excerpt">
+          Written by Zoltar
+          <small class="blog-dashboard__post-date">Dec 28, 2015</small>
+        </p>
+        <p class="blog-dashboard__post-my-thoughts">The Dungeon Master Experience was  series of blog posts written by Chris Perkins in 2011-2012.</p>
+      </div>
+    </a>
+    <a class="blog-dashboard__post-link" href="https://signalvnoise.com/posts/2582-how-do-i-learn-to-program">
+      <div class="blog-dashboard__post">
+        <h2 class="blog-dashboard__post-title">How do I learn to program?</h2>
+        <p class="blog-dashboard__post-excerpt">
+          Written by DHH
+          <small class="blog-dashboard__post-date">Sep 22, 2010</small>
+        </p>
+      </div>
+    </a>
+  </section>
+</div>

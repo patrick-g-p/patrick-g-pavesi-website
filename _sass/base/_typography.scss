@@ -22,6 +22,13 @@ body {
     }
   }
 
+  &--orange {
+    &::after {
+      @extend .header--default::after;
+      border: 3px solid $color-orange;
+    }
+  }
+
   &__link:link,
   &__link:visited {
     transition: color 0.3s;

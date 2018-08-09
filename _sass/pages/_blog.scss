@@ -1,0 +1,63 @@
+.blog-dashboard {
+  &__post-link {
+    outline: none;
+    display: block;
+  }
+
+  &__post-link:not(:first-child) {
+    margin-top: $mp-lg;
+  }
+
+  &__post:hover {
+    .blog-dashboard__post-title {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+
+    .blog-dashboard__post-excerpt,
+    .blog-dashboard__post-my-thoughts {
+      color: $color-gray;
+    }
+
+    .blog-dashboard__post-date {
+      color: $color-light-gray;
+    }
+  }
+
+  &__post-title {
+    color: $color-gray;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: $mp-sm;
+  }
+
+  &__post-excerpt {
+    padding-left: 1rem;
+    color: $color-light-gray;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__post-my-thoughts {
+    @extend .blog-dashboard__post-excerpt;
+    margin-top: 1rem;
+  }
+
+  &__post-date {
+    margin-left: $mp-sm;
+    color: $color-light-gray;
+  }
+
+  &__no-posts {
+    text-align: center;
+  }
+
+  &--external-links {
+  }
+}
+
+.external-articles {
+  padding: 2rem 0;
+  background-color: $color-off-white;
+  margin-bottom: $cmp-md;
+}
