@@ -1,6 +1,5 @@
 .skills-terminal {
-  word-break: word;
-  font-family: monospace;
+  font-family: "Ubuntu Mono", monospace;
   margin-top: $mp-lg;
 
   &__container {
@@ -12,6 +11,15 @@
   &__header {
     background-color: $color-gray;
     height: 15px;
+    position: relative;
+  }
+
+  &__header-exit-icon {
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    color: $color-off-white;
   }
 
   &__body {

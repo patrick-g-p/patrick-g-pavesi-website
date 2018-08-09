@@ -8,31 +8,35 @@ layout: "wrapper"
   </div>
   <p class="main-page-header__subtitle">
     I am a web developer based in Westchester County, NY. My passion is creating things for the web. Check out some of my
-    <a href="#projects">projects</a> and
-    <a href="#work">work</a> below.
+    <a class="main-page-header__link" href="#projects-and-work">projects</a> and
+    <a class="main-page-header__link" href="#projects-and-work">work</a> below.
   </p>
   <p class="main-page-header__lfw">
     I&#39;m actively looking for a position as a
     <strong>Front End Developer</strong> or
     <strong>Full Stack Developer</strong> in the New York City area. If you&#39;re looking for a developer
-    <a href="mailto:patrickgpavesi@gmail.com">I&#39;d love to discuss it</a>.
+    <a class="main-page-header__link" href="mailto:patrickgpavesi@gmail.com">I&#39;d love to discuss it</a>.
   </p>
   <p class="main-page-header__lfw">
     I am also currently
     <strong>avalible for hire</strong> for freelance work.
   </p>
-  <section class="skills-terminal">
+  <section id="skills-terminal" class="skills-terminal">
     <div class="skills-terminal__container">
       <div class="skills-terminal__header">
+        <span id="terminal-exit-icon" class="skills-terminal__header-exit-icon">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
       </div>
       <div class="skills-terminal__body">
         <div class="skills-terminal__info-group">
           <p class="skills-terminal__input">&#36; patrick.contactInfo</p>
           <p class="skills-terminal__output">
-            &#91; &quot;
-            <a href="mailto:patrickgpavesi@gmail.com">patrickgpavesi@gmail.com</a>&quot;, &quot;
-            <a href="https://github.com/patrick-g-p">Github</a>&quot;, &quot;
-            <a href="https://linkedin.com/in/patrick-garrett-pavesi">LinkedIn</a>&quot; &#93;
+            &#91; 
+            &quot;<a href="mailto:patrickgpavesi@gmail.com">patrickgpavesi@gmail.com</a>&quot;, 
+            &quot;<a href="https://github.com/patrick-g-p">Github</a>&quot;, 
+            &quot;<a href="https://linkedin.com/in/patrick-garrett-pavesi">LinkedIn</a>&quot; 
+            &#93;
           </p>
         </div>
         <div class="skills-terminal__info-group">
@@ -117,6 +121,7 @@ layout: "wrapper"
         <li>HTML5</li>
         <li>CSS3</li>
         <li>Sass</li>
+        <li>Javascript</li>
       </ul>
       <ul class="showcase-card__links">
         <li>
@@ -164,15 +169,16 @@ layout: "wrapper"
     Need a website? Looking to start a project?
     <a class="header__link" href="#">Let&#39;s Talk</a>
   </h2>
-  <ul class="contact-me__links">
-    <li>
-      <a href="mailto:patrickgpavesi@gmail.com">patrickgpavesi@gmail.com</a>
+  <ul class="contact-me__list">
+    <li class="contact-me__list-item">
+      <a class="contact-me__link" href="mailto:patrickgpavesi@gmail.com">patrickgpavesi@gmail.com</a>
     </li>
-    <li>
-      <a href="https://github.com/patrick-g-p">Github</a>
+    <li class="contact-me__list-item">
+      <a class="contact-me__link" href="https://github.com/patrick-g-p">Github</a>
     </li>
-    <li>
-      <a href="https://linkedin.com/in/patrick-garrett-pavesi">LinkedIn</a>
+    <li class="contact-me__list-item">
+      <a class="contact-me__link" href="https://linkedin.com/in/patrick-garrett-pavesi">LinkedIn</a>
     </li>
   </ul>
 </section>
+<script src="/assets/scripts/main.js"></script>

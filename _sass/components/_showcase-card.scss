@@ -68,6 +68,7 @@
       display: inline-block;
       padding: $mp-sm;
       border: 2px solid $color-orange;
+      margin: $mp-sm auto;
 
       &:not(:first-child) {
         margin-left: $mp-md;
@@ -81,8 +82,6 @@
         &:not(:first-child) {
           margin-left: auto;
         }
-
-        margin: $mp-md auto;
       }
 
       @media screen and (max-width: 400px) {
@@ -125,10 +124,13 @@
     &-item {
       display: block;
       padding: 2rem 4rem;
-      border-bottom: 1px solid #dadada;
       background-image: linear-gradient($color-white, $color-white);
       transform: translateY(0);
       transition: all 0.3s ease;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #dadada;
+      }
 
       a {
         transition: color 0.3s ease;

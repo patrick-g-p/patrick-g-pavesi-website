@@ -1,3 +1,16 @@
 <footer class="site-footer">
+  {% if page.layout != "home" %}
+  <ul class="contact-me__list contact-me__list--footer">
+    <li class="contact-me__list-item">
+      <a class="contact-me__link contact-me__link--footer" href="mailto:patrickgpavesi@gmail.com">patrickgpavesi@gmail.com</a>
+    </li>
+    <li class="contact-me__list-item">
+      <a  class="contact-me__link contact-me__link--footer" href="https://github.com/patrick-g-p">Github</a>
+    </li>
+    <li class="contact-me__list-item">
+      <a  class="contact-me__link contact-me__link--footer" href="https://linkedin.com/in/patrick-garrett-pavesi">LinkedIn</a>
+    </li>
+  </ul>
+  {% endif %}
   <small class="site-footer__copyright">Built by Patrick Garrett Pavesi &copy; 2016-{{ site.time | date: "%Y" }}</small>
 </footer>
