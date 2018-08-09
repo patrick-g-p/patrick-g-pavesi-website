@@ -8,6 +8,7 @@ $color-dark-blue: #234050;
 $color-light-gray: #555;
 $color-gray: #333;
 $color-dark-gray: #111;
+$color-off-white: #eee;
 $color-white: #fff;
 $color-black: #000;
 
@@ -16,10 +17,14 @@ $background-color: #f6f9fc;
 // Typography
 $default-font-size: 1.6rem;
 
+// Container Spacing
+$cmp-md: 8rem;
+$cmp-sm: 6rem;
+
 // Spacing
-$mp-lg: 2rem;
-$mp-md: 1rem;
-$mp-sm: 0.5rem;
+$mp-lg: 4rem;
+$mp-md: 2rem;
+$mp-sm: 1rem;
 
 // Grid
 $gutter-vertical: 8rem;

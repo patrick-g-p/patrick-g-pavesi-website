@@ -1,0 +1,43 @@
+.button {
+  &,
+  &:link,
+  &:visited {
+    border: 1px solid $color-off-white;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.3);
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-dark-blue;
+    transform: translateY(-0.3rem);
+  }
+
+  & > svg {
+    margin-left: 0.5rem;
+
+    @media screen and (max-width: 400px) {
+      display: inline-block;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+
+  &--blue,
+  &--blue:link,
+  &--blue:visited {
+    background-color: $color-blue;
+    border: 1px solid $color-dark-blue;
+    color: $color-white;
+  }
+
+  &--blue:hover,
+  &--blue:active {
+    background-color: $color-dark-blue;
+    color: $color-off-white;
+  }
+}
