@@ -4,7 +4,8 @@ Technology Stack
 
 - HTML5
 - CSS3
-  - SASS
-- JavaScript (ES6)
+  - Sass
+- JavaScript
 - Jekyll
+  - Ruby
   - Liquid
