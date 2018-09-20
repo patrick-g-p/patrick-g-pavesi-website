@@ -21,12 +21,11 @@ email: patrickgpavesi@gmail.com
 #   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: patrick-g-p
+twitter_username: patrick-g-p
 github_username: patrick-g-p
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
@@ -38,7 +37,6 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-minifier
   - jekyll-autoprefixer
 
 # SASS
@@ -46,16 +44,24 @@ sass:
   style: compact
   sass_dir: _sass
 
+autoprefixer:
+  browsers:
+  - last 3 versions
+  only_production: true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - webpack.config.js
   - node_modules
+  - src/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - developer_notes.md
   - README.md
