@@ -19,8 +19,7 @@
       overflow: hidden;
       width: 470px;
       white-space: nowrap;
-      animation: terminal-input 3s steps(42, end),
-        blink-caret 0.8s step-end infinite;
+      animation: terminal-input 3s steps(42, end), blink-caret 0.8s step-end infinite;
       @media screen and (max-width: 650px) {
         border-right: none;
         display: block;
