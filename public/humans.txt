@@ -2,10 +2,10 @@
 # The humans responsible & technology colophon
 
 # TEAM
-  Patrick Garrett Pavesi --- Full Stack Developer
+  Patrick Garrett Pavesi --- Frontend/Fullstack Engineer
 
 # THANKS
-  Erin Coen (for always believing in me)
+  My beautiful wife Erin Coen (for always believing in me)
 
 # TECHNOLOGY COLOPHON
   HTML5, CSS3, SASS ES6+ JavaScript, Webpack, git
